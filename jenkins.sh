@@ -28,6 +28,9 @@ sudo yum upgrade
 # Add required dependencies for the jenkins package
 sudo yum install fontconfig java-17-openjdk
 sudo yum install jenkins
+#####################################
+sudo yum install java-17-openjdk-devel -y
+###############################
 
 sudo systemctl enable jenkins
 sudo systemctl start jenkins

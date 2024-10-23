@@ -35,6 +35,9 @@ fi # fi means reverse of if, indicating condition end
 yum install -y yum-utils
 VALIDATE $? "Installed yum utils"
 
+yum install java-17-openjdk-devel -y
+VALIDATE $? "Installed java"
+
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 VALIDATE $? "Added docker repo"
 
